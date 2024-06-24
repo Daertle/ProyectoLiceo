@@ -19,11 +19,10 @@ CREATE TABLE ADMINISTRADOR (
     documentoAdmin VARCHAR(20),
     nombre VARCHAR(50) NOT NULL,
     apellido VARCHAR(50) NOT NULL,
-    fechaNacimiento INT NOT NULL,
-    telefono INT NOT NULL,
-    correo VARCHAR(100) NOT NULL,
     username VARCHAR(50) NOT NULL,
     passwrd VARCHAR(50) NOT NULL,
+    edad INT NOT NULL,
+    telefono VARCHAR(50) NOT NULL,
 	 PRIMARY KEY(documentoAdmin)
 );
 
@@ -33,10 +32,9 @@ CREATE TABLE INSTRUCTOR (
     documentoInstructor VARCHAR(20),
     nombre VARCHAR(50) NOT NULL,
     apellido VARCHAR(50) NOT NULL,
-    fechaNacimiento INT NOT NULL,
-    telefono INT NOT NULL,
-    correo VARCHAR(100) NOT NULL,
     username VARCHAR(50) NOT NULL,
     passwrd VARCHAR(50) NOT NULL,
-   PRIMARY KEY (documentoInstructor)
+	 edad INT NOT NULL,
+    telefono VARCHAR(50) NOT NULL,
+      PRIMARY KEY (documentoInstructor)
 );
